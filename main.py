@@ -37,7 +37,7 @@ print(subject_performance, "\n")
 # 6. Top Performers
 # ---------------------------------------------------------
 # Sort by Total Marks in descending order and select the top 3
-top_performers = df.sort_values(by='Total_Marks', ascending=False).head(3)
+top_performers = df.sort_values(by='Total_Marks').tail(3)
 
 print("--- Top 3 Performers ---")
 print(top_performers[['Name', 'Total_Marks', 'Grade']])
